@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First program</title>
+    <style>
+        blue{
+            background-color: greenyellow;
+            padding: 10px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: #333 solid 10px;
+        }
+        .colored-box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #ff6b6b, #f7d794); /* diagonal gradient */
+  border: 5px dashed #333;   /* unique dashed border */
+  border-radius: 20px;       /* rounded edges */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);  /* soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colored-box:hover {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+/* 2nd question */
+.magic-btn {
+  padding: 12px 30px;
+  border-radius: 50px;        /* pill shape */
+  border: none;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.magic-btn:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* 3rd */
+.card {
+  width: 250px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px;
+}
+
+.card img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  width: 80%;
+  border-radius: 10px;
+
+}
+.card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 10px 15px;
+}
+
+.card button {
+  margin-bottom: 15px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #f06595;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* 4th */
+
+/* 5th */
+.two-column {
+    display: flex;
+    align-items: center;
+    
+    gap: 2.5rem;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* -------- Responsive Styles -------- */
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-box img {
+        max-width: 300px;
+    }
+}
+/* 6th */
+.input-wrapper {
+  position: relative;
+  width: 260px;
+}
+
+.input-wrapper input {
+    background-color: rgb(224, 217, 217);
+  width: 100%;
+  padding: 12px 40px 12px 12px; /* space for icon */
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* click passes through */
+  font-size: 18px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1><i>Hii!</i></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, eaque maxime asperiores nisi recusandae molestias ducimus aut dolore molestiae earum. Asperiores doloribus nobis autem adipisci omnis aspernatur veniam? Provident, excepturi.</p>
+    <h2><mark>I am Minender</mark></h2>
+    <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores nihil ea quisquam alias cum facilis, sint corrupti debitis. Corporis eaque in ipsam molestias omnis voluptatum reiciendis qui dolores alias!<b></b></p>
+    <h3><del>Vaagdevi Engineering college</del></h3>
+    <p><strong> <u>ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, laudantium illum, quod dicta ea earum quisquam vitae tempore laborum necessitatibus corporis dolore. Eum dolores qui quisquam ut nihil, totam voluptates.</u></strong></p>
+    <h4><em>Hello!</em></h4>
+    <p><pre>Lorem ipsum 
+        dolor sit amet consectetur, adipisicing elit. A sunt dolore itaque id, hic et earum nam maxime iste, eaque sint tempora dolores incidunt at porro ab eius accusamus nihil.</pre></p>
+    <img src="./image2.avif">
+    <img src="./image1.webp">
+    <table border="1">
+        <tr> 
+            <th>Subject</th> 
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>DAA</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>CN</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>DevOps</td>
+            <td>98</td>
+        </td>
+        <tr>
+            <td>DA</td>
+            <td>96</td>
+        </tr>
+        <tr>
+            <td>IRS</td>
+            <td>95</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>Student Exam Scores</caption>
+        <!-- Header Row 1 -->
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="4">Subjects</th>
+        </tr>
+        <!-- Header Row 2 -->
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>History</th>
+        </tr>
+        <!-- Data Rows -->
+        <tr>
+            <td>Ali</td>
+            <td>95</td>
+            <td>89</td>
+            <td>92</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Ayesha</td>
+            <td>88</td>
+            <td>92</td>
+            <td>90</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td>Bilal</td>
+            <td>75</td>
+            <td>80</td>
+            <td>78</td>
+            <td>82</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>Student Exam Scores</caption>
+        <!-- Header Row 1 -->
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="4">Subjects</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <!-- Header Row 2 -->
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>History</th>
+        </tr>
+        <!-- Data Rows -->
+        <tr>
+            <td>Ali</td>
+            <td>95</td>
+            <td>89</td>
+            <td>92</td>
+            <td>85</td>
+            <td>361</td>
+        </tr>
+        <tr>
+            <td>Ayesha</td>
+            <td>88</td>
+            <td>92</td>
+            <td>90</td>
+            <td>87</td>
+            <td>357</td>
+        </tr>
+        <tr>
+            <td>Bilal</td>
+            <td>75</td>
+            <td>80</td>
+            <td>78</td>
+            <td>82</td>
+            <td>315</td>
+        </tr>
+        <!-- fot foot -->
+        <tfoot>
+            <tr>
+                <td colspan="6" align="center" >Upto Date</td>            </tr>
+        </tfoot>
+    </table>
+    
+    <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+    <ol type="A">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+      <ul type="square">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+          <ul type="circle">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        </ul>
+   <dl>
+    <dt>DBMS</dt>
+    <dd>DataBaseManageSysem</dd>
+   </dl>   
+   <a href="https://nextgen.edunetworld.com/"  >click me</a>
+     
+   <a target="_blank" href="https://nextgen.edunetworld.com/"  >click me</a> 
+   <form>
+    
+        <lable for="UserName">UserName</lable>
+    <input type="text" id="" placeholder="UserName" name="UserName" ><br>
+        <lable for="Password">Password</lable>
+    <input type="password" placeholder="password" required ><br>
+    <input type="submit" value="submit"><br>
+    <lable for="Intrests">Intrests</lable><br>
+    Games<input type="checkbox"><br>
+    Reading<input type="checkbox"><br>
+    <lable for="Gender">Gender</lable><br>
+    <lable for="">Male</lable>
+    <input type="radio" name="gen" id="">
+    <lable for="">Female</lable>
+    <input type="radio" name="gen" id=""><br>
+  
+    <textarea name="" id="" placeholder="Comment"></textarea><br>
+    <label for="Select">Select</label><br>
+    <select name="" id="">
+        <option value="Video" disabled selected>---Select---</option>
+        <option value="Audio">Audio</option>
+        <option value="photo">Photo</option>
+    </select><br>
+     <label for="datalist">datalist</label> <br>
+    <input type="text" list="dropdown" placeholder="select">
+    <datalist id="dropdown">
+        <option value="Video">Video</option>
+        <option value="Audio">Audio</option>
+    </datalist><br>
+    <input type="color"><br>
+    <input type="email"><br>
+    <input type="image"><br>
+    <input type="tel"><br>
+    <input type="number"><br>
+    <input type="time"><br>
+    <input type="url"><br>
+    <input type="date"><br>
+    <input type="month"><br>
+    <input type="week"><br>
+    <input type="datetime"><br>
+    <input type="search"><br>
+
+   <!-- Audio -->
+    <label for="Audio">Enjoy the music</label><br>
+
+    <audio controls autoplay loop muted>
+    <source src="music.mpeg" controls>Audio</audio><br><br>
+
+    <!-- video -->
+     <label for="Video">Beauty of imagination</label><br>
+     <video src="video.mp4" controls height="300" width="300"></video><br>
+
+     <!-- iframe -->
+      <label for="">it's adds time</label><br>
+      <iframe src="https://youtu.be/ue37CcHqM7c?si=fEdlkr83VOpls2ud"></iframe>
+     
+      <!-- Create a Colored Box
+
+Task:
+
+Width: 200px
+
+Height: 200px
+
+Background: gradient
+
+Border & shadow -->
+    <blue>
+      <div class="colored-box"></div>
+      </blue>
+
+      <!-- Style a Button
+
+Task:
+
+Rounded corners
+
+Hover color change
+
+Increase padding
+
+Add transition -->
+<button class="magic-btn">Click Me</button>
+
+<!-- Create a Card
+
+Task:
+
+Card with image, title, text, and button
+
+Add padding, shadow, border-radius -->
+<div class="card">
+
+  <img src="img1.jpg" alt="Sample Image">
+  <h3>Card Title</h3>
+  <p>This is a brief description inside the card.</p>
+  <button>Learn More</button>
+</div>
+
+<!-- Responsive Navbar (Flexbox + Media Queries)
+
+Requirements
+
+Logo left
+
+Menu right
+
+Add gap
+
+On mobile: menu becomes vertical or hamburger -->
+
+
+<!-- Two-Column Layout Using Flexbox (Unique Version)
+
+👉 Left: text
+👉 Right: image
+👉 Stays side-by-side on desktop
+👉 Stacks vertically on mobile -->
+
+<div class="two-column">
+    <div class="content">
+        <h2>Amazing Flexbox Layout</h2>
+        <p>
+            Flexbox makes it extremely easy to build responsive two-column layouts.
+            Here the text stays on the left and the image on the right — and it all
+            collapses beautifully on smaller screens.
+        </p>
+        <button>Learn More</button>
+    </div>
+
+    <div class="image-box">
+        <img src="img2.jpg" alt="Sample Image">
+    </div>
+</div>
+
+<!-- Place an icon inside an input (right side)
+✔ Requirements
+
+Search icon inside input
+
+Icon on the right
+
+Use position: relative + absolute -->
+<div class="input-wrapper">
+  <input type="text" placeholder="Search...">
+  <i class="icon">🔍</i>
+</div>
+
+
+</form>   
+</body>
+</html>
